@@ -1,0 +1,82 @@
+[{
+	"name": "华南师范大学共青团新绎队",
+	"dir": "xydg_s",
+	"img": "icon",
+	"list": [{
+		"name": "初心绎路",
+		"file": "cxyl"
+	}]
+},{
+	"name": "茨坪毛泽东故居",
+	"dir": "cpmzdgj",
+	"img": "cpmzdgj",
+	"list": [{
+		"name": "茨坪毛泽东故居",
+		"file": "cpmzdgj"
+	}]
+}, {
+	"name": "八角楼",
+	"dir": "bjl",
+	"img": "bjl",
+	"list": [{
+		"name": "八角楼",
+		"file": "bjl"
+	}]
+}, {
+	"name": "中共湘赣边界一大遗址",
+	"dir": "dycdbdh",
+	"img": "dycdbdh",
+	"list": [{
+		"name": "中共湘赣边界一大遗址",
+		"file": "dycdbdh"
+	}]
+}, {
+	"name": "大井毛泽东朱德旧居",
+	"dir": "djmzgj",
+	"img": "djmzgj",
+	"list": [{
+		"name": "概述",
+		"file": "gaishu"
+	},{
+		"name": "读书石",
+		"file": "dushushi"
+	},{
+		"name": "残墙",
+		"file": "canqiang"
+	},{
+		"name": "感情树",
+		"file": "ganqingshu"
+	}]
+}, {
+	"name": "造币厂",
+	"dir": "zbc",
+	"img": "zbc",
+	"list": [{
+		"name": "造币厂",
+		"file": "zbc"
+	}]
+}, {
+	"name": "小井红军医院",
+	"dir": "xjhjyy",
+	"img": "xjhjyy",
+	"list": [{
+		"name": "小井红军医院",
+		"file": "xjhjyy"
+	}]
+}, {
+	"name": "黄洋界哨口",
+	"dir": "hyjsk",
+	"img": "hyjsk",
+	"list": [{
+		"name": "黄洋界哨口",
+		"file": "hyjsk"
+	}]
+}, {
+	"name": "烈士陵园",
+	"dir": "lsly",
+	"img": "lsly",
+	"list": [{
+		"name": "烈士陵园",
+		"file": "lsly"
+	}]
+}]

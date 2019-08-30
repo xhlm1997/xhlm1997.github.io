@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+  <script src="http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player.js" charset="utf-8"></script>
+  	<link rel="stylesheet" href="./item/item.css" type="text/css">
+	<link rel="stylesheet" href="./jmap-plus_files/iconfont.css" type="text/css">
+</head>
+ 
+<body>
+	<div class="Tooltop">
+		<img class="logo" src="./item/logo_jxwy.png">
+		<div class="txt">
+			<p>笔下生花，绘下的不仅是图案</p>
+			<p>以画传情，表达最深的敬意</p>
+		</div>
+	</div>
+<div id="videoCon" class="video"></div>
+
+<div class="v-list">
+	<div id="left" class="v-vect"><div><i class="icon iconfont"></i></div></div>
+	<div id="right"  class="v-vect"><div><i class="icon iconfont"></i></div></div>
+	<div class="v-item"><ul>
+	<li><img src="./sview/zbc.jpg" /></li>
+	<li><img src="./sview/zbc.jpg" /></li>
+	<li><img src="./sview/zbc.jpg" /></li>
+	<li><img src="./sview/zbc.jpg" /></li>
+	<li><img src="./sview/zbc.jpg" /></li>
+	</ul></div>
+</div>
+
+<script>
+    var video = new tvp.VideoInfo();
+    video.setVid("k002652nnbl");//视频vid
+    var player = new tvp.Player(750, 450);//视频高宽 15:9
+    player.setCurVideo(video);
+    player.addParam("autoplay","1");//是否自动播放，1为自动播放，0为不自动播放
+	player.addParam("wmode","opaque");
+	player.addParam("showend",0);
+	player.addParam("adplay","0");  
+    player.addParam("pic","http://ossweb-img.qq.com/images/roco/act/a20120925movie/video_pic.jpg");//默认图片地址
+    player.addParam("flashskin", "http://imgcache.qq.com/minivideo_v1/vd/res/skins/TencentPlayerMiniSkin.swf");//是否调用精简皮肤，不使用则删掉此行代码
+    player.write("videoCon");
+</script>
+ </body>
+ </html>

@@ -1,0 +1,20 @@
+.amap-touch-toolbar .amap-lock {
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    right: 4px;
+	bottom: 18px;
+	position:absolute;
+	cursor: pointer;
+    font-size: 26px;
+    line-height: 37px;
+    text-align: center;
+}
+.amap-lock>i{
+	margin: auto;
+    font-family: verdana;
+    color: #666;
+    height: 100%;
+}

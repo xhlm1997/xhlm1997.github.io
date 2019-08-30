@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0081)file:///F:/%E9%A1%B9%E7%9B%AE/%E7%A7%91%E7%A0%94%E7%AB%8B%E9%A1%B9/jmap-plus.html -->
+<html>
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>jmap-plus example</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" media="screen" href="./jmap-plus_files/jquery-jmapplus.min.css" type="text/css">
+	<link rel="stylesheet" media="screen" href="./jmap-plus_files/iconfont.css" type="text/css">
+    <link rel="stylesheet" media="screen" href="./jmap-plus_files/jquery.mloading.css" type="text/css">	
+	<script src="./jmap-plus_files/jquery.min.js"></script>
+	<script src="./jmap-plus_files/jquery.mloading.js"></script>
+    <script src="./jmap-plus_files/jquery.mousewheel.min.js"></script>
+    <script src="./jmap-plus_files/jquery-jmapplus.min.js"></script>
+    <script src="./jmap-plus_files/jquery-jvectormap-world-mill-en.js"></script>
+  </head>
+  <body style="margin:auto">
+	<iframe class="pgiframe" name="pg"></iframe>
+    <div id="world-map" style="width: 100%; height: 100%;">
+    </div>
+	<div class="total">
+	  <div class="reslip"></div>
+	  <a class="icon" id="story"><i class="iconfont"></i></a>
+	  <a class="icon" id="video"><i class="iconfont"></i></a>
+	  <a class="icon" id="audio"><i class="iconfont"></i></a>
+	  <a class="icon" id="mascot"><i class="iconfont"></i></a>
+	  <a class="icon" id="handbk"><i class="iconfont"></i></a>
+	</div>
+	<script src="./jmap-plus_files/JGS.js"></script>
+    <script>$(function() {
+		$("body").mLoading();
+        $('#world-map').height($(window).height());
+        $('#world-map').vectorMap();
+      });</script>
+
+
+</html>

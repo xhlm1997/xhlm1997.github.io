@@ -1,0 +1,286 @@
+/* .jvectormap-label{position:absolute;display:none;border:1px solid #CDCDCD;border-radius:3px;background:#292929;color:#fff;font-family:sans-serif,Verdana;font-size:smaller;padding:3px} */
+/* .jvectormap-zoomin,.jvectormap-zoomout,.jvectormap-menu{position:absolute;border-radius:3px;background:#CAAAAA;padding:3px;color:#fff;width:12px;height:12px;cursor:pointer;line-height:10px;text-align:center} */
+/* .jvectormap-menu{top:10px;right:10px} */
+/* .jvectormap-zoomin{top:10px;left:10px;} */
+/* .jvectormap-zoomout{top:34px;left:10px;} */
+/* .jvectormap-zoomin,.jvectormap-zoomout,.jvectormap-menu{position:absolute;border-radius:3px;background:#CAAAAA;padding:3px;color:#fff;width:12px;height:12px;cursor:pointer;line-height:10px;text-align:center} */
+
+/********************主框架***********************/
+iframe{
+	border-width: 0px;
+}
+#panel{
+    background-image: url(../sview/flameman.png);
+	background-repeat: no-repeat;
+    background-position: center center;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-size: auto 60vh;
+    width: 100vw;
+    height: 100vh;
+    z-index: 152;
+    position: fixed;
+}
+.tooltop{
+    z-index: 153;
+    display: none;
+    position: relative;
+}
+.intro{
+    line-height: 5vh;
+	text-align:center;
+	font-weight: bold;
+	background-color: #ffffff;
+    opacity: 0.5;
+}
+.re_pg{
+	font-size: 3vh;
+	position:fixed;
+	color:#ffffff;
+	opacity: 0.5;
+	right:4px;
+	top:2.5vh;
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+    transform:translate(-50%,-50%);
+	z-index: 153;
+	display: none;
+}
+.pgiframe{
+	width:100%;
+	height:100vh;
+	z-index:152;
+	position: fixed;
+	top:0;
+	background-color:rgba(0, 0, 0, 0.7);
+	display: none;
+}
+.total{
+	/* width:100%; */
+	z-index:-1;
+	position:fixed;
+}
+.reslip{ 
+	width:100%;
+	height:100vh;
+	z-index:-1;
+	position: fixed;
+	top:0;
+	background:#635e5e;
+	opacity:0.5
+}
+.lvimg{
+	position:fixed;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center
+}
+.icon{
+	background-color:#FFFFFF;
+	border-radius:50%;
+	opacity: 0.5;
+	position:fixed;
+    top:50%;
+    left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+    transform:translate(-50%,-50%);
+	transition:transform 0.4s 0s, box-shadow 0s 0.4s;
+}
+.icon.ishow{
+	z-index:1;
+}
+/* #story i:after{ */
+	/* content:''; */
+/* } */
+#photo i:after{
+	content:'';
+}
+#video i:after{
+	content:'';
+}
+#audio i:after{
+	content:'';
+}
+#mascot i:after{
+	content:'';
+}
+#handbk i:after{
+	content:'';
+}
+.none i:before{
+	content:'';
+	position:absolute;
+	text-shadow: 0px 1.5px #ffffff;
+}
+.none i{
+	cursor:default!important;
+}
+.none:hover {
+	text-shadow:none!important;
+}
+/* .icon.ishow#story{ */
+	/* transform:translate(92.66%,-96.35%); */
+	/* transition:transform 0.9s ; */
+/* } */
+.icon.ishow#photo{
+	transform:translate(92.66%,-96.35%);/*18*/
+	transition:transform 0.9s ;
+}
+.icon.ishow#video{
+	transform:translate(-50%,-200%);/*90*/
+	transition:transform 0.8s ;
+}
+.icon.ishow#audio{
+	transform:translate(-192.66%,-96.35%);/*162*/
+	transition:transform 1.2s ;
+}
+.icon.ishow#mascot{
+	transform:translate(-138.17%,71.35%);/*234*/
+	transition:transform 1.1s ;
+}
+.icon.ishow#handbk{
+	transform:translate(38.17%,71.35%);/*306*/
+	transition:transform 1s ;
+}
+.icon .iconfont{
+	color:#000000;
+	position:absolute;
+    top:50%;
+    left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	-moz-transform:translate(-50%, -50%);
+	-ms-transform:translate(-50%, -50%);
+	-o-transform:translate(-50%, -50%);
+    transform:translate(-50%,-50%);
+}
+@media screen and (max-aspect-ratio:1/1) {
+	.lvimg,.opac,.total{
+		width:30vw;
+		height:30vw;
+	}
+}
+@media screen and (min-aspect-ratio:1/1) {
+	.lvimg,.opac,.total{
+		width:30vh;
+		height:30vh;
+	}
+}
+
+/********************高德地图***********************/
+/*去除高德地图logo*/
+.hidden,.amap-logo,.amap-copyright,.amap-labels{
+    display: none!important;
+	visibility: hidden!important;
+}
+.amap-labels{
+    display: none;
+	visibility: hidden;
+}
+.show{
+	display: block!important;
+	visibility: visible!important;
+}
+.lvloc {
+	color:#f63d3d
+}
+.icon:hover,.lvloc:hover,.lvloc.visited {
+    text-shadow: 2px 2px #999696;
+}
+.lvloc:hover:after,.lvloc.visited:after {
+    content:attr(data-attr);
+	position: absolute;
+    width: 8em;
+    left: 50%;
+    font-size: 14px;
+	font-weight: bold;
+    text-align: center;
+    transform: translate(-50%,-100%);
+	text-shadow:none
+}
+.amap-lock,.amap-eye,.amap-play,.amap-set{
+    background-color: rgba(255,255,255,0.9);
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 0 #ccc;
+    border-radius: 3px;
+	/* position:absolute; */
+	cursor: pointer;
+    font-size: 26px;
+    line-height: 37px;
+    text-align: center;
+}
+/* .amap-lock { */
+    /* right: 4px; */
+	/* bottom: 60px; */
+/* } */
+/* .amap-eye { */
+    /* right: 4px; */
+	/* bottom: 18px; */
+/* } */
+.amap-set{
+	position:fixed;
+	cursor: initial;
+	left: 14px;
+	top: 14px;
+	overflow:hidden;
+}
+.hov{
+	width:180px;
+	height: 400px;
+}
+.hov .set_i{
+	transform:rotate(150deg);
+}
+.hov .set_b{
+	opacity:1;
+	display: flex;
+	visibility: visible;
+}
+.set_i,.amap-set{
+	transition:0.8s;
+}
+.set_l{
+	margin-top:5px;
+}
+.set_l p:last-child{
+	border-bottom: 1px solid #bdbfba;
+}
+.set_l p{
+	font-size: 16px;
+	white-space: nowrap;
+	cursor: pointer;
+    margin: 0 8px;
+    border-top: 1px solid #bdbfba;
+}
+.set_b{
+	width: 90%;
+	padding: 0 5%;
+	visibility: hidden;
+	position: absolute;
+	bottom: 10px;
+	align-items: center;
+	justify-content: space-around;
+	opacity: 0;
+	transition: opacity 0.8s ease;
+}
+.amap-toolbar  i{
+	margin: auto;
+    font-family: verdana;
+    color: #666;
+    height: 100%;
+}
