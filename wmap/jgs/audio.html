@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+  	<link rel="stylesheet" href="./item/item.css" type="text/css">
+	<link rel="stylesheet" href="./jmap-plus_files/iconfont.css" type="text/css">
+	<script src="./item/item.js"></script>	
+</head>
+ 
+<body>
+	<div id="console" style="position:fixed;width:100%,color:#fff;z-index:9999"></div>
+	<div class="Tooltop">
+		<img class="logo" src="./item/logo_cxyl.png">
+		<div class="txt">
+			<p>青年之声，解说的不仅是伤痛</p>
+			<p>请聆听我，歌唱最好的未来</p>
+		</div>
+	</div>
+<div class="a-total">
+	<div class="a-list">
+		<ul id="a-list-ul"></ul>
+	</div>
+	<div class="a-player">
+		<audio id="player" autoplay="autoplay" data-m=0 style="position:fixed;top:80vh" ></audio>
+		<div id="ap-pic"></div>
+		<div class="ap-info">
+			<div id="ap-title">初心绎路</div>
+			<div class="ap-time">
+				<span id="ap-cur_t">00:00</span>/<span id="ap-dur_t">00:00</span>
+			</div>
+			<div class="ap-tbar">
+				<div id="ap-ctr_b"></div>
+				<div id="ap-load_b"></div>
+				<div id="ap-cur_b"><span class="ap-thumb"></span></div>
+			</div>
+		</div>
+		<div class="ap-ctr">
+			<div id="ap-play" class="pause"><i class="icon iconfont"></i></div>
+			<div id="ap-mode" class="mode-c"><i class="icon iconfont"></i></div>
+		</div>
+	</div>
+</div>
+	<script src="./item/audio.js"></script>
+ </body>
+ </html>
