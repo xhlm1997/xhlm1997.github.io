@@ -38,7 +38,7 @@ function cfm_Data(){
 	let flag, T_s = get_T_s();
 	if(verify_T(T_s)){
 		T_s =(new Date(T_s)).getTime();
-		if(T){start_t = T_s;flag = 1;}
+		if(T_s){start_t = T_s;flag = 1;}
 		else flag = 0;
 	}else flag=0;
 	setTD(flag);
