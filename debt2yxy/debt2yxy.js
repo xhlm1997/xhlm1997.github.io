@@ -1,4 +1,3 @@
-start_t = (new Date("2019-12-15 17:00:00")).getTime();
 var ms_1day = 24*60*60*1000;
 var Times=[];
 Data={
@@ -32,13 +31,16 @@ Data={
 		});
 	}
 	setTD(0);
+	cfm_Data();
 })();
 
 function cfm_Data(){
 	let flag, T_s = get_T_s();
 	if(verify_T(T_s)){
 		T_s =(new Date(T_s)).getTime();
-		if(T_s){start_t = T_s;flag = 1;}
+		if((T_s)&&(T_s<new Date().getTime())){
+			start_t = T_s;flag = 1;
+		}
 		else flag = 0;
 	}else flag=0;
 	setTD(flag);
@@ -60,7 +62,7 @@ function verify_T(T){
 setInterval(function(){
 	debt_n = calc(Data.debt_s,start_t,Data.rate_day);
 	gEid("debt").innerHTML = debt_n;	
-	if(debt_n>100000)gEid("tip").innerHTML = "不用看了，他把自己卖了都还不上了！"
+	if(debt_n>100000)gEid("tip").innerHTML = "不用看了，他把自己买了都还不上了！"
 }, 1000);
 
 function get_T_s(){
