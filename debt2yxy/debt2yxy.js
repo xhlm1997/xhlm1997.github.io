@@ -62,7 +62,7 @@ function verify_T(T){
 setInterval(function(){
 	debt_n = calc(Data.debt_s,start_t,Data.rate_day);
 	gEid("debt").innerHTML = debt_n;	
-	if(debt_n>100000)gEid("tip").innerHTML = "不用看了，他把自己买了都还不上了！"
+	if(debt_n>100000)gEid("tip").innerHTML = "不用看了，他把自己卖了都还不上了！"
 }, 1000);
 
 function get_T_s(){
